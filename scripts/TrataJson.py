@@ -28,11 +28,10 @@ class JsonRequisicao:
         listaPayload = []
         data = self.dadosjson.content
         strpay = str(data[366:548].decode())
-        strpay = self.subst.getTextoReplace(strpay,'{','')
-        strpay = self.subst.getTextoReplace(strpay,'}','')
+        strpay = self.subst.getTextoReplace(strpay,'},','}')
         strpay = self.subst.getTextoReplace(strpay,'\n','')
         strpay = self.subst.getTextoReplace(strpay,' ','')
-        for linha in strpay.split(':'):
-            listaPayload.append(linha)
+        listaPayload.append(strpay)
         return listaPayload
+    
     
