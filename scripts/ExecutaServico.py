@@ -51,7 +51,7 @@ class  ExecutaConsumo(ServicoConsumir):
             resp = JsonRequisicao(cod, TrataTexto())
             return resp.JsonPayload()
         else:
-            return 'NAK'
+            return 0
            
 
 
