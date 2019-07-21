@@ -8,14 +8,14 @@ import requests
 class LinkJson:
 	#construtor passando url, empresa , chave e tempo de requisição desejado
 	def __init__(self, url, empresa, chave, time):
-		self.url = url
-		self.empresa = empresa
-		self.chave = chave
-		self.time = time
+		self.__url = url
+		self.__empresa = empresa
+		self.__chave = chave
+		self.__time = time
 
     #método get retorna link pronto
 	def getLinkWebService(self):
-		return str(self.url+self.empresa+'&interval='+self.time+'min&apikey='+self.chave)
+		return str(self.__url+self.__empresa+'&interval='+self.__time+'min&apikey='+self.__chave)
 
 #classe para baixar arquivos json
 class BaixaJson:

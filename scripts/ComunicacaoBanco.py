@@ -22,10 +22,3 @@ class ComunicacaoBaseDados:
                                  user=self.__user,
                                  password=self.__passwd)
         return con
-
-
-#conexao = ComunicacaoBaseDados('localhost','JUNKYARD','root','meteora22')
-#
-#print(conexao.con)
-
-

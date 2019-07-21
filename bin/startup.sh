@@ -5,5 +5,6 @@ echo "------------------";
 echo "|Inicando sistema|";
 echo "------------------";
 
-cd $HOME/Codigos/Python/junkdog/scripts;
+
+cd $HOME/Projects/junk/scripts;
 python3 __init__.py
