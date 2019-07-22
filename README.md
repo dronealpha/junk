@@ -6,4 +6,4 @@
 <br>Banco:MySQL
 <br><h2>Como funciona</h2><br>
 <br>Descrição:Sistema realiza uma requisição para um serviço rest que retorna um json com payload e uma metadata da empresa.
-<br>Após resposta da requisição o sistema pega e trata apenas o paylo da mensagem e gerar string sql para insert em banco.
+<br>Após resposta da requisição o sistema pega e trata apenas o payload da mensagem e gera string sql para insert em banco.
